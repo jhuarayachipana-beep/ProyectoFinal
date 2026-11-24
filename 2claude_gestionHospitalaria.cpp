@@ -19,11 +19,11 @@ using namespace std;
   pagos.txt       : codCita|monto|estado
 */
 
-const string ARCH_PACIENTES  = "C:/Users/ASUS/Desktop/C++/C++_Archivos/TF_Programacion/pacientes.txt";
-const string ARCH_MEDICOS    = "C:/Users/ASUS/Desktop/C++/C++_Archivos/TF_Programacion/medicos.txt";
-const string ARCH_CITAS      = "C:/Users/ASUS/Desktop/C++/C++_Archivos/TF_Programacion/citas.txt";
-const string ARCH_ATENCIONES = "C:/Users/ASUS/Desktop/C++/C++_Archivos/TF_Programacion/atenciones.txt";
-const string ARCH_PAGOS      = "C:/Users/ASUS/Desktop/C++/C++_Archivos/TF_Programacion/pagos.txt";
+const string ARCH_PACIENTES  = "pacientes.txt";
+const string ARCH_MEDICOS    = "medicos.txt";
+const string ARCH_CITAS      = "citas.txt";
+const string ARCH_ATENCIONES = "atenciones.txt";
+const string ARCH_PAGOS      = "pagos.txt";
 const string ARCHIVOS[5] = {ARCH_PACIENTES, ARCH_MEDICOS, ARCH_CITAS, ARCH_ATENCIONES, ARCH_PAGOS};
 
 const string ESPECIALIDADES[5] = {
