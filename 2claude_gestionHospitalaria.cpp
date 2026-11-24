@@ -70,7 +70,7 @@ struct Pago {
 };
 
 // ===============================================================
-// PROTOTIPOS DE FUNCIONES (ordenados por modulos)
+// // DECLARACION DE FUNCIONES PARA LAS FUNCIONES DE CADA MODULO
 // ===============================================================
 
 // --- MODULO 1: GESTION DE PACIENTES ---
