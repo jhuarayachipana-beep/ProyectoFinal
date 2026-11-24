@@ -70,7 +70,7 @@ struct Pago {
 };
 
 // ===============================================================
-// // DECLARACION DE FUNCIONES PARA LAS FUNCIONES DE CADA MODULO
+// DECLARACION DE FUNCIONES PARA LAS FUNCIONES DE CADA MODULO
 // ===============================================================
 
 // --- MODULO 1: GESTION DE PACIENTES ---
