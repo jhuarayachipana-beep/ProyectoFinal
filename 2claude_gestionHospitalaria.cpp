@@ -116,11 +116,13 @@ bool leerMedico(fstream &archivo, Medico &m);
 bool leerCita(fstream &archivo, Cita &c);
 bool leerAtencion(fstream &archivo, Atencion &a);
 bool leerPago(fstream &archivo, Pago &p);
+
 void escribirPaciente(fstream &archivo, Paciente p);
 void escribirMedico(fstream &archivo, Medico m);
 void escribirCita(fstream &archivo, Cita c);
 void escribirAtencion(fstream &archivo, Atencion a);
 void escribirPago(fstream &archivo, Pago p);
+
 bool copiarArchivo(string origen, string destino);
 void guardarDatos();
 void cargarDatos();
