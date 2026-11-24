@@ -69,6 +69,64 @@ struct Pago {
     string estado;        // Pagado
 };
 
+// ===============================================================
+// PROTOTIPOS DE FUNCIONES (ordenados por modulos)
+// ===============================================================
+
+// --- MODULO 1: GESTION DE PACIENTES ---
+void registrarPaciente();
+void listarPacientes();
+Paciente buscarPaciente(string codBuscado);       // por codigo o DNI
+
+// --- MODULO 2: GESTION DE MEDICOS ---
+void registrarMedico();
+void listarMedicos();
+Medico buscarMedico(string codBuscado);
+
+// --- MODULO 3: GESTION DE CITAS MEDICAS ---
+void registrarCita();
+void listarCitas();
+Cita buscarCita(string codBuscado);
+bool horarioOcupado(string codMedico, string fecha, string hora);
+void actualizarEstadoCita(string codBuscado, string nuevoEstado);
+
+// --- MODULO 4: REGISTRO DE ATENCIONES ---
+void registrarAtencion();
+Atencion buscarAtencion(string codCita);
+
+// --- MODULO 5: CONTROL DE PAGOS ---
+void registrarPago();
+Pago buscarPago(string codCita);
+
+// --- MODULO 6: CONSULTAS ---
+void consultas();
+void mostrarPacienteCodigoODni(string dato);
+void mostrarMedicoPorCodigo(string codBuscado);
+void mostrarCitaPorCodigo(string codBuscado);
+void mostrarCitasPorEstado(string estado);
+
+// --- MODULO 7: REPORTES ---
+void reportes();
+int contarRegistros(string nombreArchivo);
+bool tieneCitaAtendida(string codPaciente);
+
+// --- MODULO 8: GESTION DE ARCHIVOS ---
+bool leerPaciente(fstream &archivo, Paciente &p);
+bool leerMedico(fstream &archivo, Medico &m);
+bool leerCita(fstream &archivo, Cita &c);
+bool leerAtencion(fstream &archivo, Atencion &a);
+bool leerPago(fstream &archivo, Pago &p);
+void escribirPaciente(fstream &archivo, Paciente p);
+void escribirMedico(fstream &archivo, Medico m);
+void escribirCita(fstream &archivo, Cita c);
+void escribirAtencion(fstream &archivo, Atencion a);
+void escribirPago(fstream &archivo, Pago p);
+bool copiarArchivo(string origen, string destino);
+void guardarDatos();
+void cargarDatos();
+
+// --- MENU Y SISTEMA ---
+int menu();
 void sistema();
 
 int main(){
@@ -76,7 +134,6 @@ int main(){
     sistema();
     return 0;
 }
-
 int menu(){
     int opcion;
     cout << "=== SISTEMA INTELIGENTE DE HOSPITAL ===" << endl;
